@@ -3,3 +3,4 @@ numpy
 scikit-learn
 tensorflow-cpu
 streamlit
+protobuf<=3.20.3
