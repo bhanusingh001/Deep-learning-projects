@@ -5,7 +5,7 @@ import pickle
 import tensorflow as tf
 from tensorflow import keras
 import time
-
+import os
 # Set page configuration
 st.set_page_config(
     page_title="Breast Cancer Predictor",
@@ -61,7 +61,8 @@ st.markdown("""
 @st.cache_resource
 def load_scaler():
     try:
-        with open('scaler.pkl', 'rb') as f:
+        scaler_path = os.path.join(os.path.dirname(__file__), 'scaler.pkl')
+        with open(scaler_path, 'rb') as f:
             return pickle.load(f)
     except Exception as e:
         return None
@@ -69,7 +70,8 @@ def load_scaler():
 @st.cache_resource
 def load_model():
     try:
-        return keras.models.load_model('breast_cancer_model.h5')
+        model_path = os.path.join(os.path.dirname(__file__), 'breast_cancer_model.h5')
+        return keras.models.load_model(model_path)
     except Exception as e:
         return None
 
