@@ -2,7 +2,7 @@
 
 > **Predict the onset of Malignant Breast Cancer based on cell nuclei measurements using Deep Learning**
 
-[**🚀 View Live App**](https://your-breast-cancer-app-link.streamlit.app/)
+[**🚀 View Live App**](https://breastccancerprediction.streamlit.app/)
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
